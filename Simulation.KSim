@@ -1,0 +1,90 @@
+OS: LINUX
+
+PROJECTFOLDER: 3.Mills    WORLDFILENAME: Douai_Poly2048     RunMode(0:3D|1:2D)= 0  |GPU_FLAGS| USE_GPU_NUM= 0  USE_MANY_DEVICES= 1 ThreadBlocks: 96
+
+PROJECTFOLDER: 2.Silo    WORLDFILENAME: Square     RunMode(0:3D|1:2D)= 0  |GPU_FLAGS| USE_GPU_NUM= 0  USE_MANY_DEVICES= 1 ThreadBlocks: 96
+
+PROJECTFOLDER: 1.Particles_Box    WORLDFILENAME: Spheres_32K     RunMode(0:3D|1:2D)= 0  |GPU_FLAGS| USE_GPU_NUM= 0  USE_MANY_DEVICES= 1 ThreadBlocks: 96
+
+
+
+
+
+
+
+
+
+
+
+-dlcm=ca
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+PROJECTFOLDER: 1.Particles_Box    WORLDFILENAME: Spheres_128cm  RunMode(0:3D|1:2D)= 0  |GPU_FLAGS| USE_GPU_NUM= 0  USE_MANY_DEVICES= 0
+
+# Only Project on the first line is run 
+
+
+
+
+
+
+
+
+
+# Restricted Projects
+
+PROJECTFOLDER: UtahMill3D   WORLDFILENAME: Mill_SPH30           RunMode(0:3D|1:2D)= 0  |GPU_FLAGS| USE_GPU_NUM= 0  USE_MANY_DEVICES= 0 
+
+
+
+PROJECTFOLDER: UtahMill3D   WORLDFILENAME: Mill_SPH30_NoLifter  RunMode(0:3D|1:2D)= 0  |GPU_FLAGS| USE_GPU_NUM= 0  USE_MANY_DEVICES= 0 
+PROJECTFOLDER: UtahMill3D   WORLDFILENAME: Mill_SPHT            RunMode(0:3D|1:2D)= 0  |GPU_FLAGS| USE_GPU_NUM= 0  USE_MANY_DEVICES= 0 
+PROJECTFOLDER: UtahMill3D   WORLDFILENAME: Mill_SPH30_Fill      RunMode(0:3D|1:2D)= 0  |GPU_FLAGS| USE_GPU_NUM= 0  USE_MANY_DEVICES= 0 
+
+
+
+
+

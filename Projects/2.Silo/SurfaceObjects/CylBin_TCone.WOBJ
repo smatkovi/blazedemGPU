@@ -1,0 +1,22 @@
+Title: "DRUM_MILL"
+Descp: "90CM"
+
+Geometry-Specfications
+
+NUM_VERTEX: 0
+
+NUM_SURFACES: 1
+
+-2 "S-TCONE" 
+Diameter_Top: 100.0
+Diameter_Bot: 25.0
+Height: 50.0
+Top:    false
+Bot:    false
+normalT: 0.0 -1.0 0.0
+normalB: 0.0  1.0 0.0
+Offset:  0.0 150.0 0.0
+
+
+
+

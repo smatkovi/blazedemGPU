@@ -1,0 +1,115 @@
+Title: NonLi
+ModelType(Specfic|0:TC_COR|1:KN_COR):   0
+Simulation_Type(0=Gen,1=mill,2=silo):   1
+Particle_Type(0=sphere,1=poly,2=mixed): 1
+Delta_t(s):       5E-5
+
+_________________________________________________
+              1_Geometrical-Information
+
+---------------------------------------
+ World_Objects_(index__name)
+---------------------------------------
+Number: 1
+
+1 Drum28cm
+
+---------------------------------------
+ Particle_Objects_(index__name__number)
+---------------------------------------
+Number: 1
+
+1 Doc_1cm 2048
+
+---------------------------------------
+ Lifter_Objects_(index__name)
+---------------------------------------
+
+Number: 1 Repeat: 16
+
+1  Square_Lifter_Moys
+
+
+
+
+_________________________________________________
+
+
+
+_________________________________________________
+              2_Simulation_Setup
+
+Num_Particles:    2048
+ForceField(cm/s): 0.000  -980.000000   0.000000 
+
+---------------------------------------------
+Rotation:         1
+RollRes:          0.00010
+GlobalDamp:       1.0
+VelLimit:         0.000
+cohesion:         0.0
+usekillzone:      0
+_________________________________________________
+
+
+_________________________________________________
+             3_Spatial-Grid-Computation
+             
+Origin:        -1.0  -1.0  -1.0
+World_Size:    50.0   50.0  30.0
+Cell_Size:     1.0   1.0    1.0
+
+_________________________________________________
+
+
+_________________________________________________
+             4_Inital_Particle-Setup
+             
+
+Read_FromFile:  1
+FileName: StartP2048
+
+_________________________________________________
+
+
+_________________________________________________
+             5_Output_Options 
+             
+Display:           1 1 0.50
+View:              0
+cut                0
+FPS:               10
+GL_DEBUG           0
+File_write(0=none) 0
+total_Time:        10.0
+time_limit:        0
+energy_diss:       0 
+wall_forces:       0
+
+
+_________________________________________________
+
+
+_________________________________________________
+          6_Simulation_Specfic_Options
+       
+Power(Revs):   1
+Total(Revs):   5
+Speed(RPM):    50
+_________________________________________________
+
+
+
+
+
+
+
+GridType(1=ran): 0                                        
+GridSize(X,Y,Z): 15    8     2
+Start(X,Y,Z):    5.10  45.0  5.10
+Space:           0.05  0.05  0.05
+Velocity:        -25.000  0.000 -25.00 
+
+
+
+

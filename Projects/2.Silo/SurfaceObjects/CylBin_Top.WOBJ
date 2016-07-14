@@ -1,0 +1,21 @@
+Title: "Silo_Paris"
+Descp: "90CM"
+
+Geometry-Specfications
+
+NUM_VERTEX: 0
+
+NUM_SURFACES: 1
+
+-1 "S-TOPCyl" 
+Diameter_Top: 100.0
+Height: 80.0
+Top:    true
+Bot:    false
+normalT: 0.0  -1.0 0.0
+normalB: 0.0  1.0 0.0
+Offset:  0.0  200.0 0.0
+
+
+
+

@@ -1,0 +1,153 @@
+Title: "Eqiom_Silo2_MonoSized"
+ModelType(Specfic|0:TC_COR|1:KN_COR):   0
+Simulation_Type(0=Gen,1=mill,2=silo):   2
+Particle_Type(0=sphere,1=poly,2=mixed): 0
+Delta_t(s):                             1.00E-4
+
+_________________________________________________
+              1_Geometrical-Information
+
+---------------------------------------
+ World_Objects_(index__name)
+---------------------------------------
+Number: 4
+
+1 CylBin_Top
+1 CylBin_TCone
+1 Container_512
+1 CylHatch
+
+---------------------------------------
+ Particle_Objects_(index__name__number)
+---------------------------------------
+Number: 1
+
+1 Bead_1cm   262144
+
+---------------------------------------
+ Lifter_Objects_(index__name)
+---------------------------------------
+
+Number: 0 Repeat: 0
+________________________________________________
+
+
+
+_________________________________________________
+              2_Simulation_Setup
+
+Num_Particles:    262144
+ForceField(cm/s): 0.000  -980.000000   0.000000 
+
+---------------------------------------------
+Use_Rotation:      1
+RollRes:           0.010
+GlobalDamp(<1.0):  1.0000
+VelLimit(Ignore):  0.0
+cohesion:          0.0
+killzone:          0
+_________________________________________________
+
+
+_________________________________________________
+             3_Spatial-Grid-Computation
+             
+Origin:       -1.0   -1.0  -1.0
+World_Size:    128    512   128
+Cell_Size:     1.0    1.0   1.0
+
+_________________________________________________
+
+
+_________________________________________________
+             4_Inital_Particle-Setup
+             
+Read_FromFile: 1
+filename: StartCan
+
+_________________________________________________
+
+
+_________________________________________________
+             5_Output_Options 
+             
+Display:                1 1 2.0
+View:                   0
+cut:                    0
+FPS:                    100
+GL_DEBUG                0
+File_write(Steps):      0
+Total_Time:             12.0
+IS_Time_Limit:          0
+IS_Energy_diss(steps):  0
+IS_Wall_forces(steps):  0
+_________________________________________________
+
+_________________________________________________
+          6_Simulation_Specfic_Options
+       
+Hatch_mode(0=open,1=manual(closed): 0
+Flow_counter:                       0
+kill_after:                         0
+_________________________________________________
+
+_________________________________________________
+          7_Custom_Options
+		  
+Custom_Color:        0
+Manual_Layer_Colors: 0
+
+
+____________________________
+#END OF INPUT
+
+# !!! Note when using kill after and you print the state and you then want to restart using that file you need to use
+      the total number of particles that are printed in that file and the number for each file that is at the bottom of the file
+	  in your World File. !!!! IF the total number for each type at the bottom does not equal the total number at the top then 
+	  change the number at the top to this total and email me to fix the error. 
+
+/* Use this to color each layer make sure the number of each particle type here = total number of particle objects 
+    This will color for 8 million particles for 16 million will be double */
+Num_Layers(num_particles,p_type): 16
+524288  0
+524288  1
+524288  0
+524288  1
+524288  0
+524288  1
+524288  0
+524288  1
+524288  0
+524288  1
+524288  0
+524288  1
+524288  0
+524288  1
+524288  0
+524288  1
+
+
+# !!! Create fill for SILO 2 only and read that file for the other silos as only the bottom is different, then allow the particles to fill the hopper below for silo 6
+  and then output that file which then can use to start for the other silo. remember to use the layer colors when you doing flow.
+
+
+#Use this when you want to fill, make sure that the spawn start height is less than the cylinder top cap height
+
+GridType(0=col,1=ran,2=fill): 2
+launch_Vel:  0.0 -400.0 0.0
+Spawn_Start: 150   1600.0  150
+Spawn_End:   640.0 1600.0  640
+
+#Use this when you want to fill using a grid , make sure that the top of the pack is less than the cylinder top cap height
+GridType(1=ran): 0                                        
+GridSize(X,Y,Z): 128    512  128
+Start(X,Y,Z):    150.0  633.0  150.0
+Space:           0.05  0.05  0.05
+Velocity:        100.0  -100.0  100.0
+
+
+GridType(1=ran): 0                                        
+GridSize(X,Y,Z): 64    64  64
+Start(X,Y,Z):    25.0  200.0  25.0
+Space:           0.05  0.05  0.05
+Velocity:        10.0  -10.0  10.0

@@ -1,0 +1,20 @@
+Title: "DRUM_MILL_MOYS"
+Descp: "28CM"
+
+Geometry-Specfications
+
+NUM_VERTEX: 0
+
+NUM_SURFACES: 1
+
+-1 "DRUM" 
+Diameter: 28.0
+Height: 11.00
+Top:    true 
+Bot:    true
+
+normalT: 0.0 0.0 -1.0
+normalB: 0.0 0.0  1.0
+Offset:  0.0 0.0 0.0
+
+
