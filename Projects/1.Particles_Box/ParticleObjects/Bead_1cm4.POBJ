@@ -3,7 +3,11 @@ Descp: "Steel_ball"
 
 Geometry_Specfications 
 
+<<<<<<< HEAD
 Diameter: 1.0
+=======
+Diameter: 0.80
+>>>>>>> 02733ccfe31d19764b94ef32d60e41952dc4e47d
 Density:  1600
 
 
