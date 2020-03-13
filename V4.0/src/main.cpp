@@ -624,7 +624,7 @@ void Set_SimInfo()
    m_InitPos.start           = m_KSimulationData->get_InitPosGrid().start;
    m_InitPos.space           = m_KSimulationData->get_InitPosGrid().space;
    m_InitPos.grid_type       = m_KSimulationData->get_InitPosGrid().grid_type;
-   m_InitPos.threads_perBlock = threads_Block;
+   m_InitPos.threads_perBlock = 32;
 
 
 
